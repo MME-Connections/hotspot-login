@@ -29,7 +29,7 @@ I assume you have been through the installation of captive portal solution.
 Download the source and unzip the file
 
 ```console
-wget -c https://github.com/mongramosjr/hotspot-login/archive/master.zip -O hotspot-login-master.zip
+wget -c https://github.com/MME-Connections/hotspot-login/archive/master.zip -O hotspot-login-master.zip
 
 unzip hotspot-login-master.zip
 ```
@@ -124,6 +124,7 @@ sudo vi /etc/chilli/config
 ```bash
 #   Use HS_UAMFORMAT to define the actual captive portal url.
 HS_UAMFORMAT=https://\$HS_UAMLISTEN/hotspotlogin.php
+HS_UAMHOMEPAGE=http://\$HS_UAMLISTEN:\$HS_UAMPORT/prelogin
 ```
 
 
